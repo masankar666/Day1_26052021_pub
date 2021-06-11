@@ -74,7 +74,7 @@ set_y = {4,5,6,8,0}
 set_x.discard(0)
 print (set_x)
 
-set_y.discard(8)
+set_y.discard(0)
 print (set_y)
 
 
