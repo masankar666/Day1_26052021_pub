@@ -1,0 +1,167 @@
+'''
+Tasks June 23:
+
+Functions:
+
+#function to add two numbers
+'''
+#My Solution:
+
+#First get two input
+
+n1 = int(input("Give your 1St number: "))
+n2 = int(input("Give youer 2nd number:"))
+
+#here my function
+def add(val1,val2):     #function fuction_name (arugments)
+    val = val1 + val2   #In inside adding  values
+    return val          #return the function value
+print(add(n1,n2))       #print the function values
+
+##################################################
+
+'''
+Tasks June 23:
+
+Functions:
+
+#function to add two string
+'''
+#My solution
+
+#First get input string
+str1 = input("Give your string 1: ")
+str2 = input("Give your string 2: ")
+
+#here my fuction
+def str_join(val1,val2):        #function function_name(arugments)
+    #val = val1 + val2          #adding string
+    val = " ".join([val1, val2])#adding string using join for space adding
+    return val                  #return the value
+
+print(str_join(str1,str2))      #print the string
+
+
+##################################################
+
+'''
+Tasks June 23:
+
+Functions:
+
+#function to add five numbers
+'''
+
+#My solution
+
+#First get input
+num1 = int(input("Give your number range for add : "))#Get the range to adding from the user
+
+#here my fuction
+
+def addfive(val1):              #function function_name(arugments)
+    sum = 0                     #declare total variable
+    for i in range(0,val1+1):   #Range value of adding values
+        sum = sum + i           #Total value adding when the for loop exit
+    return sum                  #return Total value 
+print(addfive(num1))            #print the Calculated value by call by value of function
+
+
+##################################################
+
+'''
+Tasks June 23:
+
+Functions:
+
+#function to print "hello world"
+
+'''
+#My solution
+
+#Method 1:
+#First get input strings
+str1 = input("Give your first name : ")
+str2 = input("Give your last name : ")
+
+def helloworld(fname,lname):#function fuction_name (arugments)
+    val = " ".join([fname, lname])#In inside join values
+    
+    return val                  #return the function value
+print("Hello world! " + helloworld(str1,str2))      #print the function values
+
+
+##################################################
+
+'''
+Tasks June 23:
+
+Functions:
+
+#Function to check palindrome
+
+'''
+
+#My solution
+#First get input strings
+str1 = input("Give your first name : ")
+str2 = input("Give your last name : ")
+#here my fuction
+
+
+def pali(val1,val2):            #function function_name(arugments)
+    if val1[0::] == val2[::-1]: #checking string1 and string reverse equal
+        print("palindrome")
+        return True
+    else:
+        print("Not palindrome")
+    return False
+print(pali(str1,str2))
+
+##################################################
+
+'''
+Tasks June 23:
+
+Functions:
+
+#Function to check prime number
+
+'''
+#My solution
+#First get input number:
+n = int(input("please enter a number : "))
+
+def prime(n):                   #function function_name(arugments)
+    for i in range(2,n):        #loop through all numbers and divise
+        if n % i == 0:          #modulo equal to zero or not 
+            print("not a prime number")
+            break               #modulo equal to zero break
+    else:
+        print("Prime")          #modulo equal not zero is prime  
+    return "Check completed"
+
+print(prime(n))
+
+##################################################
+
+'''
+Tasks June 23:
+
+Functions:
+
+#Function to five factorial of a number
+'''
+
+#My solutuion of Factorial:
+
+val = int(input("Please enter a number: ")) #First get integer number:
+
+def factorial(n):
+    fact = 1
+    for i in range(1,n+1):  #Process: loop through all numbers and multiply
+        fact = fact * i
+    return fact
+
+print(factorial(val))       #Output of factorial of the number
+
